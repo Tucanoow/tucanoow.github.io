@@ -1,0 +1,234 @@
+/* Estilo para o cabeçalho */
+.navbar {
+    padding: 10px 0 40px 0; /* Ajusta o padding do cabeçalho */
+    background-color: #6c757d; /* Cor de fundo cinza */
+    text-align: center; /* Centraliza o conteúdo do cabeçalho */
+}
+
+/* Estilo para o nome */
+#name {
+    color: white; /* Cor do texto em branco */
+    font-weight: bold; /* Texto em negrito */
+    font-size: 2.5rem; /* Aumenta o tamanho do texto */
+    display: block; /* Garante que ocupe toda a largura disponível */
+    margin: 0 auto; /* Centraliza o elemento */
+    padding: 5px 0; /* Espaçamento menor em torno do nome */
+}
+
+.profile-image-container {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    margin: 20px 0; /* Espaçamento em cima e embaixo da imagem */
+	
+}
+
+.profile-image {
+    width: 150px; /* Ajuste o tamanho conforme necessário */
+    height: 150px; /* Deve ser igual à largura para manter a forma redonda */
+    border-radius: 50%; /* Faz a imagem ficar redonda */
+    object-fit: cover; /* Corta a imagem para caber no círculo sem distorção */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra leve */
+	border: solid white 2px;
+	
+}
+
+@media (max-width: 768px) {
+    .profile-image {
+        width: 100px; /* Tamanho menor em dispositivos pequenos */
+        height: 100px;
+    }
+}
+
+
+/* Efeitos de interação nos cards */
+.card {
+    margin: 20px auto;
+    width: 90%; /* Largura responsiva do card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra leve */
+    border: none; /* Remove borda padrão */
+    transition: transform 0.2s, box-shadow 0.2s; /* Transição suave */
+}
+
+.card:hover {
+    transform: scale(1.02); /* Efeito de zoom ao passar o mouse */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Aumenta a sombra ao passar o mouse */
+}
+
+
+/* Estilos para a linha do tempo vertical */
+.timeline {
+    position: relative;
+    margin: 50px 0;
+    padding-left: 40px;
+    border-left: 3px solid black; /* Linha da timeline */
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-icon {
+    position: absolute;
+    left: -22px;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    background-color: black; /* Cor do ícone */
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+.timeline-content {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-left: 20px;
+}/* Estilos para a linha do tempo vertical */
+.timeline {
+    position: relative;
+    margin: 50px 0;
+    padding-left: 40px;
+    border-left: 3px solid black; /* Linha da timeline */
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.timeline-icon {
+    position: absolute;
+    left: -22px;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    background-color: black; /* Cor do ícone */
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+/* Estilo atualizado para o conteúdo do card */
+.timeline-content {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-left: 20px;
+    width: calc(100% - 40px); /* Para ocupar quase toda a tela */
+    max-width: 90%; /* Limita a largura máxima do card */
+}
+
+/* Efeitos de interação nos cards */
+.card {
+    width: 100%; /* Faz o card ocupar toda a largura disponível */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra leve */
+    border: none; /* Remove borda padrão */
+    transition: transform 0.2s, box-shadow 0.2s; /* Transição suave */
+}
+
+.card:hover {
+    transform: scale(1.02); /* Efeito de zoom ao passar o mouse */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Aumenta a sombra ao passar o mouse */
+}
+
+
+/* Ajuste para dispositivos móveis */
+@media (max-width: 768px) {
+    .timeline {
+        padding-left: 20px;
+    }
+
+    .timeline-item {
+        margin-bottom: 20px;
+    }
+
+    .timeline-icon {
+        left: -15px;
+    }
+
+    .timeline-content {
+        padding: 10px;
+    }
+}
+
+/* Estilos para os cards de habilidades */
+.card {
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra leve */
+    border: none; /* Remove borda padrão */
+    border-radius: 8px; /* Borda arredondada */
+}
+
+.h-100 {
+    height: 100%; /* Garante que os cards ocupem a altura total da coluna */
+}
+
+.card-title {
+    font-weight: bold; /* Destaca os títulos das habilidades */
+    text-align: center;
+}
+
+/* Responsividade: Estilo para telas pequenas */
+@media (max-width: 768px) {
+    .card {
+        margin-bottom: 15px; /* Reduz o espaço entre os cards em telas menores */
+    }
+}
+
+/* Adicionando transição nos cards */
+.card {
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.progress-bar {
+    background-color: #6c757d; /* Cor verde para todas as barras */
+}
+
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra leve */
+    border: none; /* Remove borda padrão */
+    transition: transform 0.2s; /* Transição suave */
+}
+
+.card:hover {
+    transform: scale(1.02); /* Efeito de zoom ao passar o mouse */
+}
+
+.card-title {
+    font-weight: bold; /* Destaca os títulos das habilidades */
+}
+.btn {
+    display: flex;
+    align-items: center;
+}
+
+.btn i {
+    margin-left: 0px; /* Espaço entre o texto e o ícone */
+}
+.btn-link {
+    text-decoration: none; /* Remove o sublinhado */
+}
+
+.btn-link:hover {
+    text-decoration: none; /* Garante que o sublinhado não apareça ao passar o mouse */
+}
+
+.footer {
+    background-color: #6c757d; /* Cor de fundo leve */
+    position: relative; /* Posicionamento relativo */
+    bottom: 0; /* Fica na parte inferior */
+    width: 100%; /* Largura total */
+    padding: 10px 0; /* Menor espaçamento vertical */
+    font-size: 0.9rem; /* Tamanho de fonte menor */
+	color:white;
+}
