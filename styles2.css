@@ -86,9 +86,9 @@ footer {
 	color: #0e3480;
 	transform: scale(1.05); /* Aumenta levemente o tamanho do card */
 }
-@media (max-width: 768px) {
+@@media (max-width: 768px) {
     .btn {
-        font-size: 1rem; /* Diminui o tamanho da fonte em telas menores */
-        padding: 10px 20px; /* Ajusta o tamanho do botão */
+        display: block; /* Garante que o botão seja exibido em telas pequenas */
+        margin: 10px auto; /* Centraliza o botão */
     }
 }
